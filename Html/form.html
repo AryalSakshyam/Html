@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+</head>
+
+<body>
+    <form action="">
+        <label for="firstname"> First Name</label>
+        <br>
+        <input type="text" name="fname" id="firstname"
+            placeholder="Your Firstname"><!--"id" ma ra "for" ko value same/ eutai hunu parcha--><!--"Placeholder"Box bhitra aauney text-->
+        <br>
+        <label for="mdname">Middle Name</label>
+        <br>
+        <input type="text" name="mdname" id="mdname" placeholder="Your Middlename">
+        <br>
+        <label for="lastname">Lastname</label>
+        <br>
+        <input type="text" name="lastname" id="lastname" placeholder="Your Lastname">
+        <br>
+        <label for="contact">ContactNumber</label>
+        <br>
+        <input type="number" name="contact" id="contact" placeholder="Your Contact">
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="example@example.com"
+            checked><!--email kolagi input type"email" huncha-->
+        <br>
+        <label for="">Gender</label><!--Radio type bata euta atra data pathaauna milcha mutiple data mildaina-->
+        <input type="radio" name="Gender" id="" value="male"
+            checked>Male<!--Gender ko lagi input type "radio"--><!--checked le auto select gardincha -->
+        <input type="radio" name="Gender" id="" value="female">Female<!--Gender ko lagi input type "radio"-->
+        <input type="radio" name="Gender" id="" value="others">Others<!--Gender ko lagi input type "radio"-->
+        <br>
+        <label for="dob">Date of birth</label>
+        <input type="date" name="dob" id="dob">
+        <br>
+        <label for="pwb">Password</label>
+        <input type="password" name="pwb" id="pwd" placeholder="Password">
+        <br>
+        <input type="submit" value="Send">
+
+    </form>
+
+</body>
+
+</html>

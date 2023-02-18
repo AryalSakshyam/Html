@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" href="images/download.png" type="image/x-icon">
+</head>
+
+<body>
+    <form action="" autocomplete="off"><!--'autocomplete'--suggestion hatauna ko lagi-->
+        <fieldset><!--layout banaucha -->
+            <legend>Fill out all the fields</legend><!--layut ko mathi text aaucha-->
+
+            <label for="fullname">Fullname</label>
+            <br>
+            <input type="text" name="fname" id="fullname" placeholder="Your Full name"
+                required><!--"required" ley compolsury garau cha -->
+            <br>
+            <label for="email">Email</label>
+            <br>
+            <input type="email" name="email" id="email" placeholder="example@example.com" required>
+            <br>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="male">Male
+            <input type="radio" name="gender" value="fmale">Female
+            <input type="radio" name="gender" value="other">Others
+            <br>
+            <label for="subject">Choose any
+                two</label><!--Multiple data data base pathauna "Checkbox" bata matra milcha "radio bata mildaina" -->
+            <br>
+            <input type="checkbox" name="subect" id="subject" value="web">Web
+            <input type="checkbox" name="subect" id="subject" value="Graphics">Graphics
+            <input type="checkbox" name="subect" id="subject" value="software">Software
+            <input type="checkbox" name="subect" id="subject" value="networking">Networking
+            <br>
+            <label for="districts">District</label>
+            <select name="districts" id="districts"><!--Multiple option Select garna ko lagi "select" use garney-->
+                <option value=""></option><!--for blank value -->
+                <option value="Kathmandu">Kathmandu</option><!--"option" maa box bhitra ko value haru halney-->
+                <option value="Lalitpur">Lalitpur</option>
+                <option value="Bhaktapur">Bhaktapur</option>
+                <option value="Dolkha">Dolkha</option>
+                <option value="Kaski">Kaksi</option>
+                <option value="Rukum">Rukum</option>
+                <option value="Rolpa">Rolpa</option>
+            </select>
+            <br>
+            <label for="phone">Phone number</label>
+            <br>
+            <input type="tel" name="phone" id="phone">
+            <br>
+            <label for="zip">Zip code</label>
+            <br>
+            <input type="number" name="zip" id="zip">
+            <br>
+            <label for="upload">File upload </label><!--To upload a file--input type"file""-->
+            <input type="file" name="upload" id="upload">
+            <br>
+            <label for="msg">Message</label>
+            <br>
+            <textarea name="msg" id="msg" cols="30"
+                rows="10"></textarea><!--Message box ko lagi text area huncha input type hudaina-->
+            <br>
+            <label for="pwb">Password</label>
+            <input type="password" name="pwd" id="pwd">
+            <br>
+            <label for="search">Search here</label>
+            <input type="search" name="search" id="search">
+            <br>
+            <input type="submit" value="send">
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+</body>
+
+</html>
